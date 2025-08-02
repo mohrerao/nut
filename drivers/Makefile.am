@@ -414,7 +414,7 @@ NUTDRV_QX_SUBDRIVERS = nutdrv_qx_bestups.c nutdrv_qx_blazer-common.c	\
  nutdrv_qx_innovart33.c	\
  nutdrv_qx_masterguard.c	\
  nutdrv_qx_mecer.c nutdrv_qx_megatec.c nutdrv_qx_megatec-old.c	\
- nutdrv_qx_mustek.c nutdrv_qx_q1.c nutdrv_qx_q2.c nutdrv_qx_q6.c nutdrv_qx_voltronic.c	\
+ nutdrv_qx_mustek.c nutdrv_qx_q1.c nutdrv_qx_qpsi_plus.c nutdrv_qx_q2.c nutdrv_qx_q6.c nutdrv_qx_voltronic.c	\
  nutdrv_qx_voltronic-qs.c nutdrv_qx_voltronic-qs-hex.c nutdrv_qx_zinto.c	\
  nutdrv_qx_hunnox.c nutdrv_qx_ablerex.c nutdrv_qx_gtec.c
 nutdrv_qx_SOURCES += $(NUTDRV_QX_SUBDRIVERS)
