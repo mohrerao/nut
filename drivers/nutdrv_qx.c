@@ -87,10 +87,11 @@
 #include "nutdrv_qx_masterguard.h"
 #include "nutdrv_qx_ablerex.h"
 #include "nutdrv_qx_gtec.h"
-#include "nutdrv_qx_qpsi_plus.h"
+#include "nutdrv_qx_qpsi.h"
 
 /* Reference list of available non-USB subdrivers */
 static subdriver_t	*subdriver_list[] = {
+	&qpsi_subdriver,
 	&voltronic_subdriver,
 	&voltronic_qs_subdriver,
 	&voltronic_qs_hex_subdriver,
@@ -110,7 +111,6 @@ static subdriver_t	*subdriver_list[] = {
 	&gtec_subdriver,
 	/* Fallback Q1 subdriver */
 	&q1_subdriver,
-	&qpsi_plus_subdriver,
 	NULL
 };
 
