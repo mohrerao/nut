@@ -17,19 +17,20 @@
 */
 
 static item_t qpsi_qx2nut[] = {
+    { "ups.realpower", 0, NULL, "QGS2\r", "", 55, '(', "", 8, 13, "%.0f", 0, NULL, NULL, NULL },
     { "input.voltage",     0, NULL, "QGS\r", "", 63, '(', "",  1,  6, "%.1f", 0, NULL, NULL, NULL },
     { "input.frequency",   0, NULL, "QGS\r", "", 63, '(', "",  7, 12, "%.1f", 0, NULL, NULL, NULL },
-    { "output.voltage",    0, NULL, "QGS\r", "", 63, '(', "", 13, 18, "%.1f", 0, NULL, NULL, NULL },
-    { "output.frequency",  0, NULL, "QGS\r", "", 63, '(', "", 19, 24, "%.1f", 0, NULL, NULL, NULL },
-    { "output.realpower",  0, NULL, "QGS\r", "", 63, '(', "", 31, 37, "%.1f", 0, NULL, NULL, NULL },
+    { "output.voltage",    0, NULL, "QGS\r", "", 63, '(', "", 12, 17, "%.1f", 0, NULL, NULL, NULL },
+    { "output.frequency",  0, NULL, "QGS\r", "", 63, '(', "", 18, 24, "%.1f", 0, NULL, NULL, NULL },
+    { "output.load",  0, NULL, "QGS\r", "", 63, '(', "", 31, 37, "%.1f", 0, NULL, NULL, NULL },
     { "battery.voltage",   0, NULL, "QGS\r", "", 63, '(', "", 45, 50, "%.1f", 0, NULL, NULL, NULL },
-
+    { "ups.temperature", 0, NULL, "QGS\r", "", 63, '(', "", 58, 62, "%.1f", 0, NULL, NULL, NULL },
     { NULL, 0, NULL, NULL, "", 0, 0, "", 0, 0, NULL, 0, NULL, NULL, NULL }
 };
 
 #ifdef TESTING
 static testing_t qpsi_testing[] = {
-    { "QGS\r", "(222.0 49.1 230.1 50.0 000.7 005 371.0 ----- 053.2 ----- 038.0 ------------\r", -1 },
+    { "QGS2\r", "(222.0 49.1 230.1 50.0 000.7 005 371.0 ----- 053.2 ----- 038.0 ------------\r", -1 },
     { NULL }
 };
 #endif
